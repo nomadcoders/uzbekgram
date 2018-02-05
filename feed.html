@@ -1,101 +1,171 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Feed | Uzbekgrm</title>
-        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    </head>
-    <body>
 
-        <header>
-            <div>
-                <div>
-                    <a href="/feed.html">
-                        <img src="images/logo.png" alt="Logo" title="Logo">
-                    </a>
-                </div>
-                <div>
-                    <input type="text" placeholder="Search">
-                </div>
-                <div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <i class="far fa-compass"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="far fa-heart"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="far fa-user"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+<head>
+    <title>Feed | Uzbekgrm</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__column">
+                <a href="/feed.html">
+                    <img class="header__logo" src="images/logo.png" alt="Logo" title="Logo">
+                </a>
             </div>
-        </header>
+            <div class="header__column">
+                <input class="header__input" type="text" placeholder="Search">
+            </div>
+            <div class="header__column">
+                <nav class="header__navigation">
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <a href="#" class="header__link">
+                                <i class="far fa-compass"></i>
+                            </a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#" class="header__link">
+                                <i class="far fa-heart"></i>
+                            </a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#" class="header__link">
+                                <i class="far fa-user"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-        <main>
-            <div>
-                <header>
-                    <img src="images/avatar.jpg">
-                    <div>
-                        <span>hanitrudi</span>
-                        <span>Damascus</span>
+    <main class="feed">
+
+        <div class="feed__column">
+            <div class="photo">
+                <header class="photo__header">
+                    <img src="images/avatar.jpg" class="photo__avatar">
+                    <div class="photo__info">
+                        <span class="photo__username">hanitrudi</span>
+                        <span class="photo__location">Damascus</span>
                     </div>
                 </header>
-                <img src="images/feedPhoto.jpg">
-                <div>
-                   <div>
-                        <div>
-                            <span><i class="far fa-heart"></i></span>
-                            <span><i class="far fa-comment"></i></span>
+                <img src="images/feedPhoto.jpg" class="photo__file">
+                <div class="photo__content">
+                    <div class="photo__actions">
+                        <div class="photo__actions-container">
+                            <span class="photo__action">
+                                <i class="far fa-heart"></i>
+                            </span>
+                            <span class="photo__action">
+                                <i class="far fa-comment"></i>
+                            </span>
                         </div>
-                        <div>
-                            <span><i class="far fa-bookmark"></i></span>
+                        <div class="photo__actions-container">
+                            <span class="photo__action">
+                                <i class="far fa-bookmark"></i>
+                            </span>
                         </div>
-                   </div>
-                   <span>123 likes</span>
-                   <ul>
-                       <li><span>hanitrudi</span> wow awesome!</li>
-                       <li><span>hanitrudi</span> wow awesome!</li>
-                       <li><span>hanitrudi</span> wow awesome!</li>
-                   </ul>
-                   <span>12 hours ago</span>
-                   <div>
-                       <textarea placeholder="Add a comment..."></textarea>
-                       <span>
-                           <i class="fas fa-ellipsis-h"></i>
-                       </span>
-                   </div>
+                    </div>
+                    <span class="photo__likes">123 likes</span>
+                    <ul class="photo__comments">
+                        <li class="photo__comment">
+                            <span class="photo__comment-writer">hanitrudi</span> wow awesome!
+                        </li>
+                        <li class="photo__comment">
+                            <span class="photo__comment-writer">hanitrudi</span> wow awesome!
+                        </li>
+                        <li class="photo__comment">
+                            <span class="photo__comment-writer">hanitrudi</span> wow awesome!
+                        </li>
+                    </ul>
+                    <span class="photo__date">12 hours ago</span>
+                    <div class="photo__add-comment-container">
+                        <textarea class="photo__textarea" placeholder="Add a comment..."></textarea>
+                        <span class="photo__comment-icon">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </span>
+                    </div>
                 </div>
             </div>
-        </main>
+        </div>
+        <div class="feed__column">
 
 
-        <footer>
-            <nav>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Press</a></li>
-                    <li><a href="#">api</a></li>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Directory</a></li>
-                    <li><a href="#">Profiles</a></li>
-                    <li><a href="#">Languages</a></li>
-                </ul>
-            </nav>
-            <span>© 2018 Uzbekgram</span>
-        </footer>
+            <div class="story">
+                <img src="images/avatar.jpg" class="story__avatar">
+                <div class="story__info">
+                    <span class="story__username">serranoarevalo</span>
+                    <span class="story__subtitle">Nicolas Serrano</span>
+                </div>
+            </div>
 
-    </body>
+
+            <div class="feed__story-divider">
+                <span class="feed__story-text">Stories</span>
+                <span class="feed__story-text">Watch all</span>
+            </div>
+
+
+            <div class="feed__stories">
+                <div class="story">
+                    <img src="images/avatar.jpg" class="story__avatar">
+                    <div class="story__info">
+                        <span class="story__username">serranoarevalo</span>
+                        <span class="story__subtitle">Nicolas Serrano</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <nav class="footer__navigation">
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <a href="#" class="footer__link">About Us</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#" class="footer__link">Support</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#" class="footer__link">Blog</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#" class="footer__link">Press</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#" class="footer__link">api</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#" class="footer__link">Jobs</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#" class="footer__link">Privacy</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#" class="footer__link">Terms</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#" class="footer__link">Directory</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#" class="footer__link">Profiles</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#" class="footer__link">Languages</a>
+                </li>
+            </ul>
+        </nav>
+        <span class="footer__copyright">© 2018 Uzbekgram</span>
+    </footer>
+
+</body>
+
 </html>
