@@ -36,6 +36,11 @@
   font-weight: 600;
 }
 
+.story__info .story__subtitle {
+  color: #999;
+  font-size: 13px;
+}
+
 .feed__column .feed__story-divider {
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   padding-top: 15px;
@@ -78,4 +83,60 @@
   width: 35px;
   border-radius: 50%;
   margin-right: 10px;
+}
+
+.photo .photo__content {
+  padding: 15px;
+}
+
+.photo__actions-container .photo__action:last-child {
+  margin-left: 15px;
+}
+
+.photo__content .photo__actions,
+.photo__content .photo__likes,
+.photo__comments .photo__comment,
+.photo__content .photo__date {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.photo__content .photo__actions {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.photo__content .photo__likes {
+  font-weight: 600;
+}
+
+.photo__comment .photo__comment-writer {
+  font-weight: 600;
+}
+
+.photo__content .photo__date {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.photo__content .photo__add-comment-container {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  justify-content: space-between;
+}
+
+.photo__add-comment-container .photo__textarea {
+  width: 95%;
+  border: 0;
+  resize: none;
+  font-size: 14px;
+}
+
+.photo__add-comment-container .photo__textarea:focus,
+.photo__add-comment-container .photo__textarea:active {
+  outline: none;
 }
