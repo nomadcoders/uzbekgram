@@ -66,6 +66,7 @@
   border-radius: 5px;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.09);
+  margin-bottom:50px;
 }
 
 .photo .photo__header {
@@ -140,4 +141,22 @@
 .photo__add-comment-container .photo__textarea:focus,
 .photo__add-comment-container .photo__textarea:active {
   outline: none;
+}
+
+
+.clicked-heart{
+  color:red;
+  animation:pump .5s linear infinite;
+}
+
+@keyframes pump{
+  0%{
+    transform:none;
+  }
+  50%{
+    transform:scale(0.95);
+  }
+  100%{
+    transform:none;
+  }
 }
