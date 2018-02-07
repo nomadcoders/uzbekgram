@@ -141,10 +141,18 @@
   outline: none;
 }
 
-.photo__avatar {
-  transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+.photo__avatar{
+  animation: potato 1s linear infinite;
 }
 
-.photo__avatar:hover {
-  transform: scale(2.5, 2.5) rotateY(1turn);
+@keyframes potato{
+  0%{
+    transform:none
+  }
+  50%{
+    transform:scale(2, 2) rotateY(1turn);
+  }
+  100%{
+    transform:none;
+  }
 }
