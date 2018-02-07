@@ -11,3 +11,18 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+main {
+  animation: nicolas 1.5s ease-out;
+}
+
+@keyframes nicolas{
+  from{
+    opacity:0;
+    transform: translateY(10px);
+  }
+  to{
+    opacity:1;
+    transform:none;
+  }
+}

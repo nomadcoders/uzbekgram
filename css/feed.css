@@ -140,19 +140,3 @@
 .photo__add-comment-container .photo__textarea:active {
   outline: none;
 }
-
-.photo__avatar{
-  animation: potato 1s linear infinite;
-}
-
-@keyframes potato{
-  0%{
-    transform:none
-  }
-  50%{
-    transform:scale(2, 2) rotateY(1turn);
-  }
-  100%{
-    transform:none;
-  }
-}

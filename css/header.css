@@ -54,3 +54,29 @@
 .header__container .header__column:last-child {
   justify-content: flex-end;
 }
+
+
+.header__list-item{
+  animation: fall .5s ease-out forwards;
+  transform: translateY(-10px);
+  opacity: 0;
+}
+
+.header__list-item:nth-child(2){
+  animation-delay: .5s;
+}
+
+.header__list-item:last-child{
+  animation-delay: 1s;
+}
+
+@keyframes fall{
+  from{
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to{
+    transform:none;
+    opacity: 1;
+  }
+}
