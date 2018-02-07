@@ -3,6 +3,7 @@
   justify-content: space-between;
   max-width: 930px;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .feed .feed__column:first-child {

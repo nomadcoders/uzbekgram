@@ -8,10 +8,12 @@
   font-size: 12px;
   width: 100%;
   font-weight: 600;
+  flex-wrap:wrap;
 }
 
 .footer__navigation .footer__list {
   display: flex;
+  flex-wrap:wrap;
 }
 
 .footer__list .footer__list-item {

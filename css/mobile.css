@@ -1,0 +1,33 @@
+@media screen and (max-width:650px){
+
+    .header__input{
+        display: none;
+    }
+
+    .header__container{
+        padding-left:40px;
+        padding-right:40px;
+    }
+
+    .feed .feed__column:first-child {
+        width: 100%;
+    }
+
+    .feed .feed__column:last-child {
+        display: none;
+    }
+
+    .footer,
+    .footer__navigation .footer__list{
+        justify-content: center
+    }
+
+    .footer__navigation .footer__list{
+        margin-bottom: 10px;
+    }
+
+    .footer__list .footer__list-item{
+        margin-bottom:10px;
+    }
+
+}
