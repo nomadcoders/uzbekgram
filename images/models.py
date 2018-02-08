@@ -8,3 +8,6 @@ class Image(models.Model):
     location = models.CharField(max_length=80)
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return '{} - {}'.format(self.caption, self.location)
