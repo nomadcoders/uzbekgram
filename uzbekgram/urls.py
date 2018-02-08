@@ -19,5 +19,7 @@ from images import views as image_views
 
 urlpatterns = [
     path('', image_views.index),
+    path('profile/', image_views.profile),
+    path('explore/', image_views.explore),
     path('admin/', admin.site.urls),
 ]
