@@ -24,3 +24,13 @@ class Comment(models.Model):
 
     def __str__(self):
         return f'{self.comment} - {self.created_for.caption}'
+
+
+class Like(models.Model):
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    created_for = models.ForeignKey(Image, on_delete=models.CASCADE, null=True)
+    created_by = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+
+    def __str__(self):
+        return f'{self.created_by.username} - {self.created_for.caption}'

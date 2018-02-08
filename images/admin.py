@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Image, Comment
+from .models import Image, Comment, Like
 
 
 class ImageAdmin(admin.ModelAdmin):
@@ -28,5 +28,15 @@ class CommentAdmin(admin.ModelAdmin):
     )
 
 
+class LikeAdmin(admin.ModelAdmin):
+
+    list_display = (
+        'created_at',
+        'created_for',
+        'created_by',
+    )
+
+
 admin.site.register(Image, ImageAdmin)
 admin.site.register(Comment, CommentAdmin)
+admin.site.register(Like, LikeAdmin)

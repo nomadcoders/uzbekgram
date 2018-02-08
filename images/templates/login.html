@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Log In{% endblock %}
+{% block whatever%}
+
+<main class="login">
+        <div class="login__column">
+            <img src="{% static 'images/phoneImage.png' %}" class="login__image">
+        </div>
+        <div class="login__column">
+            <div class="login__box">
+                <img src="{% static 'images/logo.png' %}" class="login__logo">
+                <form action="feed.html" method="post">
+                    <input type="text" placeholder="Username" name="username" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <input type="submit" value="Log in">
+                </form>
+                <span class="login__divider">or</span>
+                <a href="#" class="login__link login__link--dark"><i class="fab fa-facebook-square"></i>
+                    Login with Facebook</a>
+                <a href="#" class="login__link login__link--dark login__link--small">Forgot password</a>
+            </div>
+            <div class="login__box">
+                <span>Don't have an account?</span>
+                <a href="#" class="login__link">Sign up</a>
+            </div>
+            <div class="login__app">
+                <span>Get the app</span>
+                <div class="login__appstores">
+                    <a href="#">
+                        <img src="images/ios.png" alt="" class="login__appstore">
+                    </a>
+                    <a href="#">
+                        <img src="images/android.png" alt="" class="login__appstore">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}
