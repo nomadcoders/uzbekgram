@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Image
+from .models import Image, Comment
 
 
 class ImageAdmin(admin.ModelAdmin):
@@ -7,7 +7,8 @@ class ImageAdmin(admin.ModelAdmin):
     list_display = (
         'caption',
         'file',
-        'location'
+        'location',
+        'created_by'
     )
 
     list_filter = ('location',)
@@ -17,4 +18,15 @@ class ImageAdmin(admin.ModelAdmin):
     search_fields = ('location',)
 
 
+class CommentAdmin(admin.ModelAdmin):
+
+    list_display = (
+        'comment',
+        'created_at',
+        'created_for',
+        'created_by',
+    )
+
+
 admin.site.register(Image, ImageAdmin)
+admin.site.register(Comment, CommentAdmin)
